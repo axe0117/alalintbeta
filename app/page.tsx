@@ -1,10 +1,9 @@
 import { ColorModeButton } from "@/components/ui/color-mode";
-import { Landing } from "./Landing";
-import { WhoWeAre } from "./WhoWeAre";
-import { AlgarFramework } from "./AlgarFramework";
-import { WhatWeDo } from "./WhatWeDo";
-import { WhyPartnersChooseUs } from "./WhyPartnersChooseUs";
-import { VStack } from "@chakra-ui/react";
+import { Landing } from "./components/Landing";
+import { WhoWeAre } from "./components/WhoWeAre";
+import { AlgarFramework } from "./components/AlgarFramework";
+import { WhatWeDo } from "./components/WhatWeDo";
+import { WhyPartnersChooseUs } from "./components/WhyPartnersChooseUs";
 
 export default function Home() {
   return (

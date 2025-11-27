@@ -24,7 +24,7 @@ export function WhyPartnersChooseUs() {
       icon: <FaUserDoctor />,
     },
     { text: "Community Impact at Scale", icon: <RiCommunityFill /> },
-    { text: "Faith-rooted integrity and purpose", icon: <FaCross /> },
+    { text: "Faith-rooted Integrity and Purpose", icon: <FaCross /> },
   ];
 
   return (

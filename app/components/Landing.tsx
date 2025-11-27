@@ -8,6 +8,7 @@ export function Landing() {
         loop
         muted
         playsInline
+        controls={false}
         style={{
           position: "absolute",
           inset: "0",
