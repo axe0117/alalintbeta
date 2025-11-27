@@ -9,7 +9,7 @@ export function WhoWeAre() {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       width="100%"
-      py={{ base: 16, md: 24 }}
+      py="3%"
       _after={{
         content: '""',
         position: "absolute",
@@ -22,46 +22,43 @@ export function WhoWeAre() {
       }}
     >
       <Flex
-        direction="column"
-        justifyContent="center"
         alignItems="center"
-        gap={4}
+        flexWrap="wrap"
+        maxWidth="1280px"
+        mx="auto"
+        flexDir="row"
         position="relative"
+        justifyContent="space-between"
         zIndex={1}
-        textAlign="center"
         px={3}
       >
-        <Text
-          fontSize={{ base: "xl", md: "3xl" }}
-          color="rgb(7, 33, 54)"
-          fontWeight="bold"
-        >
+        <Text fontSize="5xl" color="rgb(7, 33, 54)" fontWeight="normal">
           Who We Are
         </Text>
 
-        <Text
-          maxW="600px"
-          fontSize={{ base: "md", md: "lg" }}
-          color="rgb(7, 33, 54)"
-        >
-          Algar Ally International is a global connector dedicated to
-          integrating intelligent technologies with human-centered services. We
-          partner with governments, hospitals, corporations, ministries, and
-          communities to create sustainable, transformative solutions across
-          borders.
-        </Text>
+        <Flex flexDir="column" gap={4}>
+          <Text maxW="600px" color="rgb(7, 33, 54)">
+            Algar Ally International is a global connector dedicated to
+            integrating intelligent technologies with human-centered services.
+            We partner with governments, hospitals, corporations, ministries,
+            and communities to create sustainable, transformative solutions
+            across borders.
+          </Text>
 
-        <Button
-          variant="ghost"
-          background="none"
-          border="1px solid rgb(12, 60, 96)"
-          borderRadius="none"
-          size="lg"
-          color="rgb(12, 60, 96)"
-          _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
-        >
-          Learn More
-        </Button>
+          <Button
+            w="full"
+            variant="ghost"
+            background="none"
+            border="1px solid rgb(12, 60, 96)"
+            borderRadius="none"
+            size="lg"
+            color="rgb(12, 60, 96)"
+            fontWeight="bold"
+            _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
+          >
+            Learn More
+          </Button>
+        </Flex>
       </Flex>
     </Box>
   );

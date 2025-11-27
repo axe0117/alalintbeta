@@ -3,30 +3,29 @@ import { Card, Flex, GridItem, SimpleGrid, Text } from "@chakra-ui/react";
 export function AlgarFramework() {
   return (
     <Flex
+      my="3%"
       mx="auto"
       flexDir="row"
       maxWidth="1280px"
       justifyContent="space-between"
-      alignItems="center"
       flexWrap="wrap"
       p={3}
     >
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={3}>
         <GridItem
           colSpan={{ base: 1, md: 2 }}
-          alignItems="center"
-          justifyContent="center"
+          backgroundColor="rgb(12, 60, 96)"
         >
           <Text
             mt={{ base: "0%", md: "40%" }}
-            fontSize={{ base: "4xl", md: "6xl" }}
-            fontWeight="bold"
-            color="rgb(7, 33, 54)"
+            fontSize="5xl"
+            color="white"
+            textAlign="center"
           >
             The ALGAR Framework
           </Text>
         </GridItem>
-        <GridItem colSpan={{ base: 1, md: 1 }}>
+        <GridItem colSpan={{ base: 1 }}>
           <Flex flexDir="column" gap={4}>
             {[
               {
@@ -55,18 +54,12 @@ export function AlgarFramework() {
                   "Serving communities and partners with compassion, purpose, and faith-centered values that foster hope, empowerment, and ethical leadership.",
               },
             ].map((content, index) => (
-              <Card.Root
-                key={index}
-                borderRadius="none"
-                backgroundColor="rgb(12, 60, 96)"
-              >
+              <Card.Root key={index} borderRadius="none" color="rgb(7, 33, 54)">
                 <Card.Body p={3} gap={2}>
-                  <Text fontWeight="bold" fontSize="xl" color="white">
+                  <Text fontWeight="bold" fontSize="xl">
                     {content.title}
                   </Text>
-                  <Text fontWeight="thin" color="white">
-                    {content.description}
-                  </Text>
+                  <Text fontWeight="thin">{content.description}</Text>
                 </Card.Body>
               </Card.Root>
             ))}

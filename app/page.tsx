@@ -12,10 +12,8 @@ export default function Home() {
       <Landing />
       <WhoWeAre />
       <AlgarFramework />
-      <VStack gap={12}>
-        <WhatWeDo />
-        <WhyPartnersChooseUs />
-      </VStack>
+      <WhatWeDo />
+      <WhyPartnersChooseUs />
       <ColorModeButton />
     </>
   );

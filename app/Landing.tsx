@@ -2,32 +2,48 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
 export function Landing() {
   return (
-    <Box
-      backgroundImage="url(/landing.jpg)"
-      backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      h="100vh"
-      width="100%"
-    >
+    <Box position="relative" width="100%" height="100vh" overflow="hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: "absolute",
+          inset: "0",
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: "-1",
+        }}
+      >
+        <source src="/compressed_earth.mp4" type="video/mp4" />
+      </video>
       <Flex
-        justifyContent="center"
-        alignItems="center"
+        mt={{ base: "50%", md: "10%" }}
+        p={3}
         flexDir="column"
-        gap={4}
-        height="100%"
-        textAlign="center"
+        maxWidth="1280px"
+        mx="auto"
+        position="relative"
+        zIndex={1}
+        color="white"
       >
         <Text
-          fontSize={{ base: "xl", md: "3xl" }}
-          color="white"
+          fontSize="2xl"
+          fontWeight="extrabold"
           textShadow="0 0 12px rgba(255,255,255,0.6)"
         >
-          Global Vision. Human Impact.
+          Global Vision.
         </Text>
-
         <Text
-          whiteSpace="nowrap"
+          fontSize="2xl"
+          fontWeight="extrabold"
+          textShadow="0 0 12px rgba(255,255,255,0.6)"
+        >
+          Human Impact.
+        </Text>
+        <Text
           fontSize={{ base: "2xl", md: "6xl" }}
           color="white"
           textShadow="0 0 12px rgba(255,255,255,0.6)"
@@ -35,7 +51,7 @@ export function Landing() {
           ALGAR ALLY INTERNATIONAL
         </Text>
 
-        <Flex gap={3} mt={4}>
+        <Flex gap={2}>
           <Button
             boxShadow="0 0 12px rgba(255,255,255,0.6)"
             color="rgb(12, 60, 96)"

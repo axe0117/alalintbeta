@@ -58,16 +58,8 @@ export function WhatWeDo() {
   ];
 
   return (
-    <Flex
-      maxWidth="1280px"
-      justifyContent="space-around"
-      alignItems="center"
-      mx="auto"
-      flexWrap="wrap"
-      p={3}
-      flexDir="column"
-    >
-      <Text fontSize="4xl" fontWeight="bold" color="rgb(7, 33, 54)">
+    <Box maxWidth="1280px" mx="auto" p={3} my="3%">
+      <Text fontSize="5xl" color="rgb(7, 33, 54)">
         What We Do
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={3}>
@@ -105,6 +97,6 @@ export function WhatWeDo() {
           </GridItem>
         ))}
       </SimpleGrid>
-    </Flex>
+    </Box>
   );
 }

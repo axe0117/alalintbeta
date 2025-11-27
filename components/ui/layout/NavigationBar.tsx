@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Image, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -38,13 +38,16 @@ export function NavigationBar() {
       transform={show ? "translateY(0)" : "translateY(-120%)"}
       boxShadow="md"
     >
-      <Box maxWidth="1280px" px={3} mx="auto">
+      <Box maxWidth="1280px" mx="auto" px={3}>
         <Flex justifyContent="space-between" alignItems="center">
-          <Link href="/">
-            <Text fontSize="xl" color="white">
-              ALGAR ALLY INTERNATIONAL
-            </Text>
-          </Link>
+          <Flex flexDir="row" alignItems="center" gap={2}>
+            <Image src="/logo.png" alt="Logo" width="48px" height="48px" />
+            <Link href="/">
+              <Text fontSize="xl" color="white">
+                ALGAR ALLY INTERNATIONAL
+              </Text>
+            </Link>
+          </Flex>
         </Flex>
       </Box>
     </Box>

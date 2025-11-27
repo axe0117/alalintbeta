@@ -29,15 +29,15 @@ export function WhyPartnersChooseUs() {
 
   return (
     <Flex
+      my="3%"
       maxWidth="1280px"
       justifyContent="space-around"
-      alignItems="center"
       mx="auto"
       flexWrap="wrap"
       p={3}
       flexDir="column"
     >
-      <Text fontSize="4xl" fontWeight="bold" color="rgb(7, 33, 54)">
+      <Text fontSize="5xl" color="rgb(7, 33, 54)">
         Why Partners Choose Us
       </Text>
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={3}>
