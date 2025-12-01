@@ -49,6 +49,7 @@ export function Landing() {
           fontSize={{ base: "2xl", md: "6xl" }}
           color="white"
           textShadow="0 0 12px rgba(255,255,255,2.6)"
+          //like 2.6 hog
           border="none"
         >
           ALGAR ALLY INTERNATIONAL
