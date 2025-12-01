@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export function WhoWeAre() {
   return (
@@ -18,7 +19,7 @@ export function WhoWeAre() {
         width: "100%",
         height: "100%",
         bg: "rgba(216, 232, 242, 0.8)",
-        zIndex: 0,
+        zIndex: 0
       }}
     >
       <Flex
@@ -45,19 +46,21 @@ export function WhoWeAre() {
             across borders.
           </Text>
 
-          <Button
-            w="full"
-            variant="ghost"
-            background="none"
-            border="1px solid rgb(12, 60, 96)"
-            borderRadius="none"
-            size="lg"
-            color="rgb(12, 60, 96)"
-            fontWeight="bold"
-            _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
-          >
-            Learn More
-          </Button>
+          <Link href="/about">
+            <Button
+              w="full"
+              variant="ghost"
+              background="none"
+              border="1px solid rgb(12, 60, 96)"
+              borderRadius="none"
+              size="lg"
+              color="rgb(12, 60, 96)"
+              fontWeight="bold"
+              _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
+            >
+              Learn More
+            </Button>
+          </Link>
         </Flex>
       </Flex>
     </Box>

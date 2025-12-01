@@ -31,35 +31,35 @@ export function AlgarFramework() {
               {
                 title: "A - Alliance Building",
                 description:
-                  "Forging global partnerships across governments, industries, and institutions to expand opportunities and create worldwide networks.",
+                  "Forging global partnerships across governments, industries, and institutions to expand opportunities and create worldwide networks."
               },
               {
                 title: "L - Leadership in Innovation",
                 description:
-                  "Implementing AI healthcare systems, digital platforms, BPO technologies, and smartsolutions that accelerate growth and efficiency.",
+                  "Implementing AI healthcare systems, digital platforms, BPO technologies, and smartsolutions that accelerate growth and efficiency."
               },
               {
                 title: "G - Global Workforce Excellence",
                 description:
-                  "Recruiting, training, and mobilizing top-tier medical professionals, call center specialists,and international talent.",
+                  "Recruiting, training, and mobilizing top-tier medical professionals, call center specialists,and international talent."
               },
               {
                 title: "A - Advanced Community Development",
                 description:
-                  "Designing smart, sustainable housing and healthcare infrastructures that strengthen cities and improve quality of life.",
+                  "Designing smart, sustainable housing and healthcare infrastructures that strengthen cities and improve quality of life."
               },
               {
                 title: "R - Redemptive Service & Faith Ministry",
                 description:
-                  "Serving communities and partners with compassion, purpose, and faith-centered values that foster hope, empowerment, and ethical leadership.",
-              },
+                  "Serving communities and partners with compassion, purpose, and faith-centered values that foster hope, empowerment, and ethical leadership."
+              }
             ].map((content, index) => (
               <Card.Root key={index} borderRadius="none" color="rgb(7, 33, 54)">
                 <Card.Body p={3} gap={2}>
                   <Text fontWeight="bold" fontSize="xl">
                     {content.title}
                   </Text>
-                  <Text fontWeight="thin">{content.description}</Text>
+                  <Text>{content.description}</Text>
                 </Card.Body>
               </Card.Root>
             ))}

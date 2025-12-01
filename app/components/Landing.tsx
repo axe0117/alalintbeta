@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export function Landing() {
   return (
@@ -15,10 +16,10 @@ export function Landing() {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          zIndex: "-1",
+          zIndex: "-1"
         }}
       >
-        <source src="/compressed_earth.mp4" type="video/mp4" />
+        <source src="/earth_compressed_min.mp4" type="video/mp4" />
       </video>
       <Flex
         mt={{ base: "50%", md: "10%" }}
@@ -48,27 +49,30 @@ export function Landing() {
           fontSize={{ base: "2xl", md: "6xl" }}
           color="white"
           textShadow="0 0 12px rgba(255,255,255,0.6)"
+          border="none"
         >
           ALGAR ALLY INTERNATIONAL
         </Text>
 
-        <Flex gap={2}>
-          <Button
-            boxShadow="0 0 12px rgba(255,255,255,0.6)"
-            color="rgb(12, 60, 96)"
-            backgroundColor="white"
-            borderRadius="none"
-            fontSize="md"
-            fontWeight="bold"
-            size={{ base: "md", md: "lg" }}
-            _hover={{
-              backgroundColor: "rgb(12, 60, 96)",
-              color: "white",
-              transition: "0.3s",
-            }}
-          >
-            Explore Our Solutions
-          </Button>
+        <Flex gap={2} flexDir={{ base: "column", md: "row" }}>
+          <Link href="/#solutions">
+            <Button
+              boxShadow="0 0 12px rgba(255,255,255,0.6)"
+              color="rgb(12, 60, 96)"
+              backgroundColor="white"
+              borderRadius="none"
+              fontSize="md"
+              fontWeight="bold"
+              size={{ base: "md", md: "lg" }}
+              _hover={{
+                backgroundColor: "rgb(12, 60, 96)",
+                color: "white",
+                transition: "0.3s"
+              }}
+            >
+              Explore Our Solutions
+            </Button>
+          </Link>
 
           <Button
             boxShadow="0 0 12px rgba(255,255,255,0.6)"
@@ -81,7 +85,7 @@ export function Landing() {
             _hover={{
               backgroundColor: "rgb(12, 60, 96)",
               color: "white",
-              transition: "0.3s",
+              transition: "0.3s"
             }}
           >
             Partner with Us

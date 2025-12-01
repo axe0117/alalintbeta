@@ -1,18 +1,9 @@
 "use client";
 
-import {
-  Box,
-  Image,
-  Flex,
-  Text,
-  Drawer,
-  Portal,
-  IconButton,
-  Icon,
-} from "@chakra-ui/react";
+import { Box, Image, Flex, Drawer, Portal, Icon, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Link from "next/link";
 
 export function NavigationBar() {
   const [show, setShow] = useState(true);
@@ -40,22 +31,45 @@ export function NavigationBar() {
 
   return (
     <>
+      {/* Mobile Navigation Bar */}
       <Drawer.Root
         open={open}
         size={{ base: "xs", md: "md" }}
         placement="start"
         onOpenChange={(e) => setOpen(e.open)}
+        initialFocusEl={() => null}
       >
         <Portal>
           <Drawer.Backdrop />
           <Drawer.Positioner>
-            <Drawer.Content backgroundColor="rgb(7, 33, 54)">
-              <Drawer.Header>
-                <Drawer.Title fontSize="2xl" fontWeight="bold" color="white">
-                  ALGAR ALLY INTERNATIONAL
-                </Drawer.Title>
-              </Drawer.Header>
-              <Drawer.Body></Drawer.Body>
+            <Drawer.Content backgroundColor="rgb(7, 33, 54)" userSelect="none">
+              <Drawer.Body p={12}>
+                <Link href="/">
+                  <Text fontSize="2xl" fontWeight="bold" color="white" mb="20%">
+                    ALGAR ALLY INTERNATIONAL
+                  </Text>
+                </Link>
+                <Flex gap={12} flexDir="column">
+                  {[
+                    { name: "About", url: "/about" },
+                    { name: "Explore Our Solutions", url: "/#solutions" }
+                  ].map((link) => (
+                    <Link href={link.url} key={link.url}>
+                      <Text
+                        color="white"
+                        fontSize="2xl"
+                        fontWeight="bold"
+                        _hover={{
+                          textShadow: "0 0 12px rgba(255,255,255,0.6)",
+                          transition: "0.3s"
+                        }}
+                      >
+                        {link.name}
+                      </Text>
+                    </Link>
+                  ))}
+                </Flex>
+              </Drawer.Body>
             </Drawer.Content>
           </Drawer.Positioner>
         </Portal>
@@ -76,9 +90,12 @@ export function NavigationBar() {
           px={3}
           justifyContent="space-between"
           alignItems="center"
+          userSelect="none"
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
-            <Image src="/logo.png" alt="Logo" width="48px" height="48px" />
+            <Link href="/">
+              <Image src="/logo.png" alt="Logo" width="64px" height="64px" />
+            </Link>
           </Flex>
           <Icon
             onClick={() => setOpen(true)}

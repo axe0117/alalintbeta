@@ -5,7 +5,7 @@ import {
   GridItem,
   List,
   SimpleGrid,
-  Text,
+  Text
 } from "@chakra-ui/react";
 
 export function WhatWeDo() {
@@ -16,8 +16,8 @@ export function WhatWeDo() {
       list: [
         "Smart EMR systems",
         "Telehealth platforms",
-        "AI diagnostics & analytics",
-      ],
+        "AI diagnostics & analytics"
+      ]
     },
     {
       number: "02",
@@ -25,8 +25,8 @@ export function WhatWeDo() {
       list: [
         "Multilingual support",
         "Healthcare RCM",
-        "Customer success & tech support",
-      ],
+        "Customer success & tech support"
+      ]
     },
     {
       number: "03",
@@ -34,8 +34,8 @@ export function WhatWeDo() {
       list: [
         "Nurses, Physical Therapists",
         "Credentialing pipelines",
-        "US/Canada placements",
-      ],
+        "US/Canada placements"
+      ]
     },
     {
       number: "04",
@@ -43,8 +43,8 @@ export function WhatWeDo() {
       list: [
         "AI-enabled housing",
         "Affordable sustainable townships",
-        "Medical community integration",
-      ],
+        "Medical community integration"
+      ]
     },
     {
       number: "05",
@@ -52,13 +52,13 @@ export function WhatWeDo() {
       list: [
         "Missions",
         "Leadership Development",
-        "Family and spiritual programs",
-      ],
-    },
+        "Family and spiritual programs"
+      ]
+    }
   ];
 
   return (
-    <Box maxWidth="1280px" mx="auto" p={3} my="3%">
+    <Box maxWidth="1280px" mx="auto" p={3} my="3%" id="solutions">
       <Text fontSize="5xl" color="rgb(7, 33, 54)">
         What We Do
       </Text>

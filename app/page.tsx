@@ -1,4 +1,3 @@
-import { ColorModeButton } from "@/components/ui/color-mode";
 import { Landing } from "./components/Landing";
 import { WhoWeAre } from "./components/WhoWeAre";
 import { AlgarFramework } from "./components/AlgarFramework";
@@ -13,7 +12,6 @@ export default function Home() {
       <AlgarFramework />
       <WhatWeDo />
       <WhyPartnersChooseUs />
-      <ColorModeButton />
     </>
   );
 }

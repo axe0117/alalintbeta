@@ -5,26 +5,28 @@ import { Box } from "@chakra-ui/react";
 import { Footer } from "@/components/ui/layout/Footer";
 import { Montserrat } from "next/font/google";
 
-const bricolage = Montserrat({
-  subsets: ["latin"],
+const montserrat = Montserrat({
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
   title: "Home | Alagar Ally International",
-  description: "Test.",
+  description: "Test."
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html className={bricolage.className} lang="en" suppressHydrationWarning>
+    <html className={montserrat.className} lang="en" suppressHydrationWarning>
       <body>
-        <Provider>
+        <Provider defaultTheme="light">
           <NavigationBar />
-          <Box mx="auto">{children}</Box>
+          <Box mx="auto" minHeight="100vh">
+            {children}
+          </Box>
           <Footer />
         </Provider>
       </body>
