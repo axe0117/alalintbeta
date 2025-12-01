@@ -34,11 +34,22 @@ export function Footer() {
               <Text>Cherry Hill, NJ 08002</Text>
             </Box>
           </Flex>
+          
+
+
+          
           <Flex flexDir="column" gap={1} color="white">
             <Text fontWeight="bold">COMPANY</Text>
             <Link href="/about">
               <Text>About</Text>
             </Link>
+            <Box>
+              <Text>(Phone)</Text>
+            </Box>
+
+            <Box>
+              <Text>(Email)</Text>
+            </Box>
           </Flex>
         </Flex>
         <Text>© ALGAR ALLY INTERNATIONAL, {new Date().getFullYear()}</Text>

@@ -34,21 +34,21 @@ export function Landing() {
         <Text
           fontSize="2xl"
           fontWeight="extrabold"
-          textShadow="0 0 12px rgba(255,255,255,0.6)"
+          textShadow="0 0 12px rgba(255,255,255,1.0)"
         >
           Global Vision.
         </Text>
         <Text
           fontSize="2xl"
           fontWeight="extrabold"
-          textShadow="0 0 12px rgba(255,255,255,0.6)"
+          textShadow="0 0 12px rgba(255,255,255,1.0)"
         >
           Human Impact.
         </Text>
         <Text
           fontSize={{ base: "2xl", md: "6xl" }}
           color="white"
-          textShadow="0 0 12px rgba(255,255,255,0.6)"
+          textShadow="0 0 12px rgba(255,255,255,2.6)"
           border="none"
         >
           ALGAR ALLY INTERNATIONAL

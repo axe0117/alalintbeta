@@ -21,6 +21,7 @@ export function AlgarFramework() {
             fontSize="5xl"
             color="white"
             textAlign="center"
+            textShadow="0 0 12px rgba(255,255,255,1.0)"
           >
             The ALGAR Framework
           </Text>

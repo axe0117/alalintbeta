@@ -72,10 +72,10 @@ export function WhatWeDo() {
             >
               <Card.Body p={3} gap={2}>
                 <Box height="100px">
-                  <Text fontSize="3xl" color="white">
+                  <Text fontSize="3xl" color="white" textShadow="0 0 12px rgba(255,255,255,1.0)">
                     {content.number}.
                   </Text>
-                  <Text fontSize="xl" color="white">
+                  <Text fontSize="xl" color="white" textShadow="0 0 12px rgba(255,255,255,1.0)">
                     {content.title}
                   </Text>
                 </Box>
@@ -87,6 +87,7 @@ export function WhatWeDo() {
                       fontSize="md"
                       fontWeight="bold"
                       color="white"
+                      textShadow="0 0 12px rgba(255,255,255,0.6)"
                     >
                       {item}
                     </List.Item>
