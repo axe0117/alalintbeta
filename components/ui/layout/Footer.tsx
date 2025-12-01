@@ -15,8 +15,8 @@ export function Footer() {
         gap={4}
         color="white"
       >
-        <Flex justifyContent="space-between" flexWrap="wrap">
-          <Flex flexDir="column" gap={4}>
+        <Flex justifyContent="space-between" flexWrap="wrap" gap={6}>
+          <Flex flexDir="column" gap={1}>
             <Link href="/">
               <Text fontWeight="bold">ALGAR ALLY INTERNATIONAL</Text>
             </Link>
@@ -34,7 +34,7 @@ export function Footer() {
               <Text>Cherry Hill, NJ 08002</Text>
             </Box>
           </Flex>
-          <Flex flexDir="column" gap={4} color="white">
+          <Flex flexDir="column" gap={1} color="white">
             <Text fontWeight="bold">COMPANY</Text>
             <Link href="/about">
               <Text>About</Text>
