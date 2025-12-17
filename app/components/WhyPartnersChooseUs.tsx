@@ -18,7 +18,7 @@ export function WhyPartnersChooseUs() {
       text: "Strong Government & Enterprise Alliances",
       icon: <RiGovernmentLine />,
     },
-    { text: "AI Innovation That Works in Real Life", icon: <FaRobot /> },
+    { text: "AI Innovation That Works In Real Life", icon: <FaRobot /> },
     {
       text: "World-Class Healthcare & Workforce Expertise",
       icon: <FaUserDoctor />,
