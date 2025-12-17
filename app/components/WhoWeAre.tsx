@@ -18,7 +18,7 @@ export function WhoWeAre() {
         left: 0,
         width: "100%",
         height: "100%",
-        bg: "rgba(216, 232, 242, 0.8)",
+        bg: "rgba(216, 232, 242, 0.5)",
         zIndex: 0
       }}
     >

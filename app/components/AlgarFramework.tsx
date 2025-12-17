@@ -2,6 +2,7 @@ import { Card, Flex, GridItem, SimpleGrid, Text } from "@chakra-ui/react";
 
 export function AlgarFramework() {
   return (
+    
     <Flex
       my="3%"
       mx="auto"
@@ -15,6 +16,10 @@ export function AlgarFramework() {
         <GridItem
           colSpan={{ base: 1, md: 2 }}
           backgroundColor="rgb(12, 60, 96)"
+          backgroundImage="url(holocity.png)"
+          backgroundSize="cover"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
         >
           <Text
             mt={{ base: "0%", md: "40%" }}
