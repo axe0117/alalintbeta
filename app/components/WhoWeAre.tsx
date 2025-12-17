@@ -5,7 +5,7 @@ export function WhoWeAre() {
   return (
     <Box
       position="relative"
-      backgroundImage="url(/mountains.jpg)"
+      backgroundImage="url(vroom.png)"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
