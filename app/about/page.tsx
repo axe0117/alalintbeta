@@ -56,6 +56,7 @@ export default function About() {
         <GridItem colSpan={{ base: 2 }}>
           <Image src="/about.jpg" />
         </GridItem>
+
       </SimpleGrid>
     </Flex>
   );

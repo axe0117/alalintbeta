@@ -22,7 +22,7 @@ export function AlgarFramework() {
           backgroundRepeat="no-repeat"
         >
           <Text
-            mt={{ base: "0%", md: "40%" }}
+            mt={{ base: "0%", md: "50%" }}
             fontSize="5xl"
             color="white"
             textAlign="center"

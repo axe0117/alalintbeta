@@ -5,7 +5,8 @@ import {
   GridItem,
   List,
   SimpleGrid,
-  Text
+  Text,
+  Image
 } from "@chakra-ui/react";
 
 export function WhatWeDo() {
@@ -62,7 +63,7 @@ export function WhatWeDo() {
       <Text fontSize="5xl" color="rgb(7, 33, 54)">
         What We Do
       </Text>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={3}>
+      <SimpleGrid columns={{ base: 11, md: 4, lg: 4}} gap={3}>
         {items.map((content, index) => (
           <GridItem key={index}>
             <Card.Root
@@ -97,7 +98,22 @@ export function WhatWeDo() {
             </Card.Root>
           </GridItem>
         ))}
+         <GridItem colSpan={{ base: 2, md: 2}}>
+                   <Image src="livingroom.jpg" />
+                 </GridItem>
+                 <GridItem colSpan={{ base: 2, md: 1}}>
+                   <Image src="echo.jpg" />
+                 </GridItem>
+                 <GridItem colSpan={{ base: 2, md: 2}}>
+                   <Image src="cityifgood.png" />
+                 </GridItem>
+                 <GridItem colSpan={{ base: 2, md: 2}}>
+                   <Image src="health.jpg" />
+                 </GridItem>
       </SimpleGrid>
+      
     </Box>
+
+    
   );
 }

@@ -6,6 +6,7 @@ import {
   Icon,
   SimpleGrid,
   Text,
+  Image
 } from "@chakra-ui/react";
 import { CiGlobe } from "react-icons/ci";
 import { FaCross, FaRobot, FaUserDoctor } from "react-icons/fa6";
@@ -34,7 +35,7 @@ export function WhyPartnersChooseUs() {
       justifyContent="space-around"
       mx="auto"
       flexWrap="wrap"
-      p={3}
+      gap={3}
       flexDir="column"
     >
       <Text fontSize="5xl" color="rgb(7, 33, 54)">
@@ -60,8 +61,13 @@ export function WhyPartnersChooseUs() {
                 </Card.Body>
               </Card.Root>
             </GridItem>
+            
           );
+          
         })}
+        <GridItem colSpan={{ base: 3}}>
+                  <Image src="/walltablet.png"/>
+                </GridItem>
       </SimpleGrid>
     </Flex>
   );
