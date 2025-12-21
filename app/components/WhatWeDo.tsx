@@ -63,7 +63,7 @@ export function WhatWeDo() {
       <Text fontSize="5xl" color="rgb(7, 33, 54)">
         What We Do
       </Text>
-      <SimpleGrid columns={{ base: 11, md: 4, lg: 4}} gap={3}>
+      <SimpleGrid columns={{ base: 1, md: 4, lg: 4}} gap={3}>
         {items.map((content, index) => (
           <GridItem key={index}>
             <Card.Root
@@ -98,17 +98,17 @@ export function WhatWeDo() {
             </Card.Root>
           </GridItem>
         ))}
-         <GridItem colSpan={{ base: 2, md: 2}}>
+         <GridItem colSpan={{ base: 2, md: 2}} display={{ base: 'none', md: 'block' }}>
                    <Image src="livingroom.jpg" />
                  </GridItem>
-                 <GridItem colSpan={{ base: 2, md: 1}}>
+                 <GridItem colSpan={{ base: 2, md: 1}} display={{ base: 'none', md: 'block' }}>
                    <Image src="echo.jpg" />
                  </GridItem>
-                 <GridItem colSpan={{ base: 2, md: 2}}>
+                 <GridItem colSpan={{ base: 2, md: 2}} display={{ base: 'none', md: 'block' }}>
                    <Image src="cityifgood.png" />
                  </GridItem>
-                 <GridItem colSpan={{ base: 2, md: 2}}>
-                   <Image src="health.jpg" />
+                 <GridItem colSpan={{ base: 2, md: 2}} display={{ base: 'none', md: 'block' }}>
+                   <Image src="housephone.jpg" />
                  </GridItem>
       </SimpleGrid>
       

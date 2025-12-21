@@ -65,7 +65,7 @@ export function WhyPartnersChooseUs() {
           );
           
         })}
-        <GridItem colSpan={{ base: 3}}>
+        <GridItem colSpan={{ base: 3}} display ={{base: 'none', md: 'block' }}>
                   <Image src="/walltablet.png"/>
                 </GridItem>
       </SimpleGrid>
