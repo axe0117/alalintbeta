@@ -29,6 +29,9 @@ export function WhyPartnersChooseUs() {
   ];
 
   return (
+    <Box
+    backgroundColor="rgb(12, 60, 96)"
+    width="100%">
     <Flex
       my="3%"
       maxWidth="1280px"
@@ -37,8 +40,10 @@ export function WhyPartnersChooseUs() {
       flexWrap="wrap"
       gap={3}
       flexDir="column"
+      
     >
-      <Text fontSize="5xl" color="rgb(7, 33, 54)">
+      <Text fontSize="5xl" color="white"
+                      textShadow="0 0 12px rgba(255,255,255,0.6)">
         Why Partners Choose Us
       </Text>
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={3}>
@@ -55,7 +60,9 @@ export function WhyPartnersChooseUs() {
                   <Icon size="2xl" width="75px" height="75px">
                     {reason.icon}
                   </Icon>
-                  <Text textAlign="center" fontWeight="bold" fontSize="xl">
+                  <Text textAlign="center" fontWeight="bold" fontSize="xl"
+                  color="white"
+                      textShadow="0 0 12px rgba(255,255,255,0.6)">
                     {reason.text}
                   </Text>
                 </Card.Body>
@@ -70,5 +77,6 @@ export function WhyPartnersChooseUs() {
                 </GridItem>
       </SimpleGrid>
     </Flex>
+    </Box>
   );
 }
