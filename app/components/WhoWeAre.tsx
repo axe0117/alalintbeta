@@ -10,7 +10,7 @@ export function WhoWeAre() {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       width="100%"
-      py="3%"
+      py="10%"
       _after={{
         content: '""',
         position: "absolute",
@@ -18,7 +18,7 @@ export function WhoWeAre() {
         left: 0,
         width: "100%",
         height: "100%",
-        bg: "rgba(216, 232, 242, 0.5)",
+        bg: "rgba(216, 232, 242, 0.2)",
         zIndex: 0
       }}
     >
@@ -33,12 +33,12 @@ export function WhoWeAre() {
         zIndex={1}
         px={3}
       >
-        <Text fontSize="5xl" color="rgb(7, 33, 54)" fontWeight="normal">
+        <Text fontSize="5xl" color="rgb(7, 33, 54)" fontWeight="extrabold" backgroundColor="white">
           Who We Are
         </Text>
 
         <Flex flexDir="column" gap={4}>
-          <Text maxW="600px" color="rgb(7, 33, 54)">
+          <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold" backgroundColor="white">
             Algar Ally International is a global connector dedicated to
             integrating intelligent technologies with human-centered services.
             We partner with governments, hospitals, corporations, ministries,

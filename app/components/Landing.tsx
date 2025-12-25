@@ -34,21 +34,21 @@ export function Landing() {
         <Text
           fontSize="2xl"
           fontWeight="extrabold"
-          textShadow="0 0 12px rgba(255,255,255,3.0)"
+          textShadow="0 0 20px rgba(255,255,255,2.0)"
         >
           Global Vision.
         </Text>
         <Text
           fontSize="2xl"
           fontWeight="extrabold"
-          textShadow="0 0 12px rgba(255,255,255,3.0)"
+          textShadow="0 0 20px rgba(255,255,255,2.0)"
         >
           Human Impact.
         </Text>
         <Text
           fontSize={{ base: "2xl", md: "6xl" }}
           color="white"
-          textShadow="0 0 12px rgba(255,255,255,3.0)"
+          textShadow="0 0 20px rgba(255,255,255,2.0)"
           //like 2.6 hog
           border="none"
         >
