@@ -18,7 +18,7 @@ export function WhoWeAre() {
         left: 0,
         width: "100%",
         height: "100%",
-        bg: "rgba(216, 232, 242, 0.2)",
+        bg: "rgba(216, 232, 242, 0.6)",
         zIndex: 0
       }}
     >
@@ -33,17 +33,18 @@ export function WhoWeAre() {
         zIndex={1}
         px={3}
       >
-        <Text fontSize="5xl" color="rgb(7, 33, 54)" fontWeight="extrabold" backgroundColor="white">
-          Who We Are
+        <Text fontSize="5xl" color="rgb(7, 33, 54)" fontWeight="extrabold">
+          Who is Algar Ally <br></br>
+          International
         </Text>
 
         <Flex flexDir="column" gap={4}>
-          <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold" backgroundColor="white">
-            Algar Ally International is a global connector dedicated to
-            integrating intelligent technologies with human-centered services.
-            We partner with governments, hospitals, corporations, ministries,
-            and communities to create sustainable, transformative solutions
-            across borders.
+          <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold">
+            Algar Ally International is a visionary global cross-border accelerator 
+            committed to accelerating progress through the fusion of intelligent 
+            technologies and human-centered services. We partner with governments, 
+            businesses, and communities to deliver transformative solutions that 
+            address real-world challenges—at scale and across borders.
           </Text>
 
           <Link href="/about">

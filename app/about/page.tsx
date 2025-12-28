@@ -21,36 +21,47 @@ export default function About() {
         <GridItem colSpan={{ base: 2 }}>
           <VStack gap={12} alignItems="flex-start">
             <Text>
-              A global connector and multidisciplinary solutions company
-              dedicated to bridging nations, industries, and communities through
-              purpose-driven innovation. Founded on the belief that progress is
-              strongest when technology and humanity move together, we bring a
-              unique blend of advanced systems, global workforce solutions, and
-              faith-rooted service to every partnership.
+              A visionary global cross-border accelerator committed to 
+              accelerating progress through the fusion of intelligent technologies 
+              and human-centered services. We partner with governments, businesses, 
+              and communities to deliver transformative solutions that address 
+              real-world challenges—at scale and across borders.
             </Text>
             <Text>
-              We empower businesses and institutions across countries by
-              integrating intelligent AI healthcare systems, establishing
-              high-performance BPO and call center operations, and recruiting
-              top-tier medical professionals worldwide. Our work extends beyond
-              business into community upliftment through smart housing
-              development and faith ministry that strengthens families and
-              creates safer, smarter, and more resilient communities.
+              Guided by a mission to bridge innovation with impact, we design and 
+              deploy sustainable, scalable systems that uplift lives, strengthen 
+              institutions, and drive inclusive growth. Our work spans sectors and 
+              continents, uniting diverse stakeholders through strategic partnerships 
+              that turn bold ideas into measurable outcomes.
             </Text>
             <Text>
-              At Algar Ally International, we see the world not as divided
-              markets, but as interconnected opportunities for growth, healing,
-              and transformation. Our mission is to serve as the bridge—linking
-              people with purpose, nations with innovation, and communities with
-              hope.
-            </Text>
-            <Text>
-              We are more than a company.
+              At our core, Algar Ally is more than a connector—
               <br />
               <Span fontWeight="bold" textDecor="underline" fontSize="xl">
-                We are a global ally for the future.
+                We are a catalyst for global resilience, equity, and advancement.
               </Span>
             </Text>
+
+            <Text color="rgb(7, 33, 54)" fontSize="4xl">
+              Mission Statement
+            </Text>
+            <Text>
+              To accelerate global progress by integrating intelligent technologies 
+              with human-centered services—empowering governments, businesses, and communities 
+              through transformative solutions and visionary partnerships. Algar Ally International 
+              exists to bridge innovation with impact, delivering sustainable, scalable systems that 
+              uplift lives, strengthen institutions, and drive inclusive growth across borders.
+            </Text>
+
+            <Text color="rgb(7, 33, 54)" fontSize="4xl">
+              Vision Statement
+            </Text>
+            <Text>
+              To be the world’s most trusted bridge between innovation and impact—empowering nations, 
+              industries, and communities to thrive through transformative solutions, inclusive 
+              collaboration, and sustainable growth.
+            </Text>
+            <Span></Span>
           </VStack>
         </GridItem>
         <GridItem colSpan={{ base: 2 }}>

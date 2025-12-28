@@ -44,6 +44,7 @@ export function WhyPartnersChooseUs() {
     >
       <Text fontSize="5xl" color="white"
                       textShadow="0 0 12px rgba(255,255,255,0.6)">
+                        <br></br>
         Why Partners Choose Us
       </Text>
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={3}>
@@ -72,6 +73,7 @@ export function WhyPartnersChooseUs() {
           );
           
         })}
+        <br></br>
         <GridItem colSpan={{ base: 3}} display ={{base: 'none', md: 'block' }}>
                   <Image src="/walltablet.png"/>
                 </GridItem>
