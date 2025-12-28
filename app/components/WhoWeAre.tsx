@@ -74,7 +74,7 @@ export function WhoWeAre() {
               fontWeight="bold"
               _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
             >
-              Slides
+              Find Out What We're Up To
             </Button>
           </Link>
         </Flex>

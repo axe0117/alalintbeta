@@ -52,7 +52,8 @@ export function NavigationBar() {
                 <Flex gap={12} flexDir="column">
                   {[
                     { name: "About", url: "/about" },
-                    { name: "Explore Our Solutions", url: "/#solutions" }
+                    { name: "Explore Our Solutions", url: "/#solutions" },
+                    { name: "Join Our Events", url: "/slides" }
                   ].map((link) => (
                     <Link href={link.url} key={link.url}>
                       <Text
@@ -94,7 +95,7 @@ export function NavigationBar() {
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
             <Link href="/">
-              <Image src="/algarlogo.png" alt="Logo" width="128px" height="128px" />
+              <Image src="/algarlogo.png" alt="Logo" width="82px" height="82px" />
             </Link>
           </Flex>
           <Icon

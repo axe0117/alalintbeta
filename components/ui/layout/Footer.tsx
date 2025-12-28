@@ -44,11 +44,11 @@ export function Footer() {
               <Text>About</Text>
             </Link>
             <Box>
-              <Text>(Phone)</Text>
+              <Text></Text>
             </Box>
 
             <Box>
-              <Text>(Email)</Text>
+              <Text></Text>
             </Box>
           </Flex>
         </Flex>

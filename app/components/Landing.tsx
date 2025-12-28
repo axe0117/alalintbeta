@@ -75,6 +75,7 @@ export function Landing() {
             </Button>
           </Link>
 
+          <Link href="/slides">
           <Button
             boxShadow="0 0 12px rgba(255,255,255,0.6)"
             color="rgb(12, 60, 96)"
@@ -89,8 +90,10 @@ export function Landing() {
               transition: "0.3s"
             }}
           >
-            Partner with Us
+            Get Involved with Us
           </Button>
+          </Link>
+
         </Flex>
       </Flex>
     </Box>
