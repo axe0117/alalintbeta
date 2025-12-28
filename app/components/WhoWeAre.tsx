@@ -62,6 +62,21 @@ export function WhoWeAre() {
               Learn More
             </Button>
           </Link>
+          <Link href="/slides">
+            <Button
+              w="full"
+              variant="ghost"
+              background="none"
+              border="1px solid rgb(12, 60, 96)"
+              borderRadius="none"
+              size="lg"
+              color="rgb(12, 60, 96)"
+              fontWeight="bold"
+              _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
+            >
+              Slides
+            </Button>
+          </Link>
         </Flex>
       </Flex>
     </Box>
